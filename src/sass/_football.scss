@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+}
+  
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+  
+.field {
+    width: 720px;
+    height: 220px;
+    background-color: #5ABB58;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 37px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* кнопка з тінню */
+}
+  
+  .ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 85px;
+    left: 50px;
+    transition: top 0.1s linear, left 0.1s linear;
+}
+  
