@@ -1,3 +1,16 @@
+import "./js/header"
+import "./js/main"
+import "./js/date-of-birth"
+import "./js/guess-number"
+import "./js/rock-paper-scirors"
+import "./js/calculator"
+import "./js/time-calculator"
+import "./js/dino"
+import "./js/football"
+import "./js/three_numbers"
+import "./js/our-team"
+import "./js/scientist"
+import "./js/footer"
 const gameContainerEl = document.querySelector('.js-game')
 
 const games = [
