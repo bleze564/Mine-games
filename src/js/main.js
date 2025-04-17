@@ -57,6 +57,6 @@ const list = games.map((game) => {
   return `<li id=${game.id}>
         <h2>${game.name}</h2>
         </li>`;
-});
+}).join("");
 
 gameContainerEl.insertAdjacentHTML('afterend', list);
