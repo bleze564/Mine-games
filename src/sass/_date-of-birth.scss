@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+}
 .date__input {
     width: 251px;
     height: 35px;
@@ -44,5 +50,6 @@
   }
   .date__div{
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 149px;
   }
