@@ -1,0 +1,62 @@
+.footer__img {
+    width: 165px;
+    height: 70px;
+  }
+  .footer__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+    color: #000;
+  }
+  .footer__input {
+    border-radius: 20px;
+    padding: 10px 80px 10px 10px;
+    width: 204px;
+    height: 35px;
+    background: #d7d7d7;
+    font-weight: 400;
+    font-size: 12px;
+    color: #7e7e7e;
+    border: none;
+  }
+  .footer__btn {
+    border-radius: 20px;
+    padding: 10px;
+    width: 107px;
+    height: 35px;
+    background: #000;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+  }
+  .footer__input-text {
+    font-weight: 400;
+    font-size: 6px;
+    color: #000;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 463px;
+    width: 100%;
+    padding: 150px;
+  }
+  .close-btn {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
