@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    padding: 2rem;
+    min-width: 400px;
+  }
+  
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .inputs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  input[type="number"] {
+    border: none;
+    border-radius: 20px;
+    background-color: #ddd;
+    padding: 0.6rem 1.2rem;
+    width: 150px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    appearance: none;
+  }
+  #result {
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
