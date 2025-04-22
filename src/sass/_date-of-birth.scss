@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+}
+.date__input {
+    width: 251px;
+    height: 35px;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px 45px 10px 10px;
+    background: #d7d7d7;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #7e7e7e;
+  }
+  .date__btn {
+    border-radius: 0 20px 20px 0;
+    fill: #000;
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+    border: none;
+    position: relative;
+    right: 39px;
+    top: 2px;
+  }
+  .date__input[type="number"]::-webkit-outer-spin-button,
+  .date__input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .date__input[type="number"] {
+    appearance: textfield;
+  }
+  .date__text-true,
+  .date__text-false {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .date__text-true{
+      color: #039900;
+  }
+  .date__text-false{
+      color: #900;
+      display: none;
+  }
+  .date__div{
+      display: flex;
+      justify-content: center;
+      gap: 149px;
+  }
