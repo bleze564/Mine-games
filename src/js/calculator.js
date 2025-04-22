@@ -1,7 +1,17 @@
 
 
-
-
+const gameContainer =document.querySelector("#4")
+gameContainer.innerHTML =(`<input id="num1" oninput="getNumber(event)"/>
+    <div id="operator_btns">
+      <button id="plus" class="operator">+</button>
+      <button id="minus" class="operator">-</button>
+      <button id="extrude" class="operator">x</button>
+      <button id="spread" class="operator">:</button>
+    </div>
+    <input id="num2" oninput="getNumber(event)"/>
+    <button onclick="func()">равняется</button>
+    
+    <p id="result"></p>`)
 let firstNum = undefined;
 let secondNum = undefined;
 let result = undefined;
@@ -36,3 +46,8 @@ function setMathAction(event){
   mathAction = el.id;
   console.log(mathAction)
 }
+
+if (mathAction === "plus"){
+  result = firstNum + secondNum
+}
+// else if
