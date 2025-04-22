@@ -1,22 +1,54 @@
 <footer>
-    <div class="footer__div-first">
-        <img class="footer__img" src="./images/coding-magic.png" alt="coding magic">
+  <div class="footer__div-first">
+    <img
+      class="footer__img"
+      src="./images/coding-magic.png"
+      alt="coding magic"
+    />
+    <div>
         <p class="footer__text">Тел: +38 (123) 456 78 90</p>
         <p class="footer__text">E-Mail: codingmagic@gmail.com</p>
         <p class="footer__text">Facebook: CodingMagic</p>
         <p class="footer__text">Twitter: CodingMagic</p>
         <p class="footer__text">Instagram: CodingMagic</p>
     </div>
-    <div class="footer__div-second">
-        <form class="footer__form">
-            <label class="footer__label">
-                <input class="footer__input" type="email" placeholder="Ваша ел. адреса...">
-                <button id="openModalBtn"  class="footer__btn">Підписатись</button>
-            </label>
-        </form>
-        <p class="footer__input-text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
-        <div id="footerModal" class="modal">
-            <div class="modal-content">
-              <button class="close-btn">x</button>  
+  </div>
+  <div class="footer__div-second">
+    <form class="footer__form">
+      <label class="footer__label">
+        <input
+          class="footer__input"
+          type="email"
+          placeholder="Ваша ел. адреса..."
+        />
+        <button id="openModalBtn" class="footer__btn">Підписатись</button>
+      </label>
+    </form>
+    <p class="footer__input-text">
+      *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
+    </p>
+  </div>
+
+  <!-- modal -->
+
+  <div id="footerModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn">
+        <img
+          class="buttonImg"
+          src="./images/closeModal.png"
+          alt="close modal"
+        />
+      </button>
+      <h3 class="modal-title">Дякую за підписку!</h3>
+      <img class="modal-imgOne" src="./images/swordModal.png" alt="sword" />
+      <img class="modal-imgTwo" src="./images/puzzleModal.png" alt="puzzle" />
+      <img class="modal-imgThree" src="./images/console.png" alt="game" />
+      <img
+        class="modal-imgFour"
+        src="./images/tic-tacModal.png"
+        alt="tic tac"
+      />
     </div>
+  </div>
 </footer>
