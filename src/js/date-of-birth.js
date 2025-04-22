@@ -7,7 +7,7 @@ gameContainerEl.insertAdjacentHTML(
       <label class="date__label">
         <input class="date__input" type="number" placeholder="Введіть рік народження" />
       <button class="date__btn">
-        <img src="../images/search.png" alt="search">
+        <img src="./images/search.png" alt="search">
       </button>
       </label>
     </form>
