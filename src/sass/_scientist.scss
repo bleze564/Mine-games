@@ -1,0 +1,79 @@
+ h2 {
+    margin-bottom: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card {
+    background-color: #d6cdcd;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    background-color: #c8bebe;
+    transform: scale(1.05);
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card img {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 0;
+  }
+  
+  .card:hover img {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
