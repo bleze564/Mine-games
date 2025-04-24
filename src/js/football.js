@@ -1,4 +1,5 @@
-'use strict';
+
+const gameContainerEl = document.getElementById('7');
 
 const title = document.createElement('h2');
 title.textContent = 'Футбол';
@@ -28,3 +29,4 @@ field.addEventListener('mousemove', (e) => {
   ball.style.left = `${Math.max(0, Math.min(x, maxX))}px`;
   ball.style.top = `${Math.max(0, Math.min(y, maxY))}px`;
 });
+
