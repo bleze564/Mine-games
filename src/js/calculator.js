@@ -1,21 +1,24 @@
 
 
-const gameContainer =document.querySelector("#4")
-gameContainer.innerHTML =(`<input id="num1" oninput="getNumber(event)"/>
+const gameContainer =document.getElementById("4")
+gameContainer.innerHTML =(`
+    <input id="num1" />
     <div id="operator_btns">
       <button id="plus" class="operator">+</button>
       <button id="minus" class="operator">-</button>
       <button id="extrude" class="operator">x</button>
       <button id="spread" class="operator">:</button>
     </div>
-    <input id="num2" oninput="getNumber(event)"/>
-    <button onclick="func()">равняется</button>
+    <input id="num2">
+    <button id="button-Result">Дорівнює</button>
     
-    <p id="result"></p>`)
+    <p id="result"></p>
+    
+  `)
 let firstNum = undefined;
 let secondNum = undefined;
 let result = undefined;
-let mathAction = undefined;
+
 
 
 function getNumber(event){
@@ -35,7 +38,7 @@ function getNumber(event){
 
 
 let mathActionButtons = document.querySelectorAll(".operator");
-
+let actionResult = document.querySelector("#button-Result");
 [...mathActionButtons].forEach(element => {
   element.addEventListener("click", setMathAction)
 })
@@ -45,9 +48,26 @@ function setMathAction(event){
   let el = event.target;
   mathAction = el.id;
   console.log(mathAction)
+  actionResult.addEventListener("click", getResult)
+}
+function getResult(){
+  choseAction()
+}
+function choseAction(){
+  if (mathAction === "plus"){
+    result = firstNum + secondNum
+  }
+  else if(mathAction === "minus"){
+    result = firstNum - secondNum
+  }
+  else if(mathAction === "extrude"){
+    result = firstNum * secondNum
+  }
+  else if(mathAction === "spread"){
+    result = firstNum / secondNum
+  }
 }
 
-if (mathAction === "plus"){
-  result = firstNum + secondNum
-}
-// else if
+
+
+
