@@ -3,8 +3,9 @@ const openBtn = document.getElementById('openModalBtn');
 const closeBtn = modal.querySelector('.close-btn');
 
 openBtn.addEventListener('click', () => {
-  modal.style.display = 'flex';
+  modal.classList.toggle('active');
 });
+
 closeBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
+  modal.classList.remove('active');
 });

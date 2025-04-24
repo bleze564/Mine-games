@@ -100,3 +100,10 @@
   bottom: 100px;
   left: 350px;
 }
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: flex;
+}
