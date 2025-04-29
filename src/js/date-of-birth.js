@@ -1,13 +1,15 @@
+import searchImg from '../images/search.png'
+
 const gameContainerEl = document.getElementById('1');
 
 gameContainerEl.insertAdjacentHTML(
-    "afterend",
+    "beforeend",
     `<div class="date__div">
     <form class="date__form">
       <label class="date__label">
         <input class="date__input" type="number" placeholder="Введіть рік народження" />
       <button class="date__btn">
-        <img src="./images/search.png" alt="search">
+        <img src="${searchImg}" alt="search">
       </button>
       </label>
     </form>
