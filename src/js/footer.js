@@ -7,5 +7,5 @@ openBtn.addEventListener('click', () => {
 });
 
 closeBtn.addEventListener('click', () => {
-  modal.classList.remove('active');
+  modal.classList.toggle('active');
 });

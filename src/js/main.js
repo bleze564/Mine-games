@@ -3,12 +3,12 @@ const gameContainerEl = document.querySelector('.js-game')
 const games = [
   {
     id: 1,
-    name: 'Високосний калькулятор',
+    name: 'Перевір в який рік ти народився',
     category: 'numerical',
   },
   {
     id: 2,
-    name: 'Вгадай число',
+    name: 'Вгадай число, яке загадав комп’ютер',
     category: 'numerical',
   },
   {
@@ -38,7 +38,7 @@ const games = [
   },
   {
     id: 8,
-    name: 'Найбільше число',
+    name: 'Введіть 3 числа',
     category: 'numerical',
   },
   {
@@ -48,7 +48,7 @@ const games = [
   },
   {
     id: 10,
-    name: 'Вчений',
+    name: 'Обери вченого/их',
     category: 'acquaintance',
   },
 ];
@@ -59,4 +59,4 @@ const list = games.map((game) => {
         </li>`;
 }).join("");
 
-gameContainerEl.insertAdjacentHTML('afterend', list);
+gameContainerEl.insertAdjacentHTML('beforeend', list);
