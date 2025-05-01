@@ -1,13 +1,13 @@
-'use strict'
 
 // Створення контейнера
 const container = document.createElement('div');
-container.className = 'container';
+container.className = 'input-container';
 document.body.appendChild(container);
 
 // Заголовок
 const heading = document.createElement('h2');
 heading.textContent = 'Введіть 3 числа';
+heading.className = 'header-title';
 container.appendChild(heading);
 
 // Контейнер інпутів
@@ -21,13 +21,14 @@ for (let i = 0; i < 3; i++) {
   const input = document.createElement('input');
   input.type = 'number';
   input.placeholder = 'Введіть число';
+  input.className = 'input-number';
   inputs.push(input);
   inputsDiv.appendChild(input);
 }
 
 // Результат
 const result = document.createElement('div');
-result.id = 'result';
+result.className = 'result-text';
 result.textContent = 'Найбільше число, яке ви ввели - (число)';
 container.appendChild(result);
 
@@ -43,4 +44,3 @@ inputs.forEach(input => {
     }
   });
 });
-const gameContainerEl = document.getElementById('8');
