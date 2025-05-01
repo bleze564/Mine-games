@@ -1,4 +1,3 @@
-'use strict';
 
 // Створення контейнера
 const container = document.createElement('div');

@@ -11,7 +11,7 @@ document.body.appendChild(field);
 const ball = document.createElement('img');
 ball.classList.add('ball');
 ball.alt = "М'яч";
-ball.src = '../../images./football.png';
+ball.src = '../../../images/football.png';
 field.appendChild(ball);
 
 field.addEventListener('mousemove', (e) => {
