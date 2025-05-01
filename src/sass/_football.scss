@@ -1,11 +1,10 @@
-
-  
-h2 {
+.football-title {
     margin-top: 40px;
     margin-bottom: 20px;
-}
+    text-align: center;
+  }
   
-.field {
+  .field {
     width: 720px;
     height: 220px;
     background-color: #5ABB58;
@@ -14,8 +13,8 @@ h2 {
     border-radius: 37px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* кнопка з тінню */
-}
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
   
   .ball {
     position: absolute;
@@ -24,5 +23,5 @@ h2 {
     top: 85px;
     left: 50px;
     transition: top 0.1s linear, left 0.1s linear;
-}
+  }
   

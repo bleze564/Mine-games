@@ -1,22 +1,18 @@
 
-const gameContainerEl = document.getElementById('7');
-
 const title = document.createElement('h2');
 title.textContent = 'Футбол';
+title.className = 'football-title';
 document.body.appendChild(title);
-
 
 const field = document.createElement('div');
 field.classList.add('field');
 document.body.appendChild(field);
 
-
 const ball = document.createElement('img');
 ball.classList.add('ball');
 ball.alt = "М'яч";
-ball.src = '/football.png';
+ball.src = '../../images./football.png';
 field.appendChild(ball);
-
 
 field.addEventListener('mousemove', (e) => {
   const rect = field.getBoundingClientRect();
@@ -29,4 +25,3 @@ field.addEventListener('mousemove', (e) => {
   ball.style.left = `${Math.max(0, Math.min(x, maxX))}px`;
   ball.style.top = `${Math.max(0, Math.min(y, maxY))}px`;
 });
-

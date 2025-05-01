@@ -1,4 +1,3 @@
-'use strict';
 
 // Дані з фото
 const scientists = [
@@ -19,6 +18,7 @@ const scientists = [
 // Заголовок
 const title = document.createElement('h2');
 title.textContent = 'Вчений';
+title.className = 'header-title';
 document.body.appendChild(title);
 
 // Контейнер
@@ -34,8 +34,10 @@ function renderCards(data, singleRow = false) {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
-      <strong>${sci.name}</strong><br>${sci.birth} – ${sci.death}
-      <img src="${sci.img}" alt="${sci.name}" />
+      <div class="card-content">
+        <strong>${sci.name}</strong><br>${sci.birth} – ${sci.death}
+      </div>
+      <img class="card-img" src="${sci.img}" alt="${sci.name}" />
     `;
     container.appendChild(card);
   });
@@ -50,6 +52,7 @@ document.body.appendChild(actions);
 function addButton(text, callback) {
   const btn = document.createElement('button');
   btn.textContent = text;
+  btn.className = 'btn';
   btn.onclick = callback;
   actions.appendChild(btn);
 }
@@ -96,4 +99,4 @@ addButton('Прожив найменше', () => {
 addButton('Народились у 19 ст.', () => {
   renderCards(scientists.filter(s => s.birth >= 1801 && s.birth <= 1900));
 });
-const gameContainerEl = document.getElementById('10');
+
