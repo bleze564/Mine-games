@@ -1,4 +1,5 @@
-
+const gameContainerEl = document.getElementById('7');
+import footballImg from '../images/football.png'
 const title = document.createElement('h2');
 title.textContent = 'Футбол';
 title.className = 'football-title';
@@ -11,7 +12,7 @@ document.body.appendChild(field);
 const ball = document.createElement('img');
 ball.classList.add('ball');
 ball.alt = "М'яч";
-ball.src = '../../../images/football.png';
+ball.src = footballImg;
 field.appendChild(ball);
 
 field.addEventListener('mousemove', (e) => {

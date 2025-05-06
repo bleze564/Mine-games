@@ -1,4 +1,4 @@
-
+const gameContainerEl = document.getElementById('8');
 // Створення контейнера
 const container = document.createElement('div');
 container.className = 'input-container';

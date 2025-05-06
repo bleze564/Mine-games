@@ -1,4 +1,4 @@
-
+const gameContainerEl = document.getElementById('10');
 // Дані з фото
 const scientists = [
   { name: 'Albert Einstein', birth: 1879, death: 1955, img: '/9.jpg' },
@@ -22,14 +22,14 @@ title.className = 'header-title';
 document.body.appendChild(title);
 
 // Контейнер
-const container = document.createElement('div');
-container.className = 'container';
-document.body.appendChild(container);
+const box = document.createElement('div');
+box.className = 'container';
+document.body.appendChild(box);
 
 // Функція відображення
 function renderCards(data, singleRow = false) {
-  container.innerHTML = '';
-  container.className = singleRow ? 'container filtered' : 'container';
+  box.innerHTML = '';
+  box.className = singleRow ? 'box filtered' : 'box';
   data.forEach(sci => {
     const card = document.createElement('div');
     card.className = 'card';
@@ -39,7 +39,7 @@ function renderCards(data, singleRow = false) {
       </div>
       <img class="card-img" src="${sci.img}" alt="${sci.name}" />
     `;
-    container.appendChild(card);
+    box.appendChild(card);
   });
 }
 renderCards(scientists);
