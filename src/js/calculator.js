@@ -15,9 +15,10 @@ gameContainer.innerHTML =(`
     <p id="result"></p>
     
   `)
-let firstNum = undefined;
-let secondNum = undefined;
-let result = undefined;
+let firstNum = "";
+let secondNum = "";
+let result = "";
+let mathAction ="";
 
 
 
@@ -42,18 +43,17 @@ let actionResult = document.querySelector("#button-Result");
 [...mathActionButtons].forEach(element => {
   element.addEventListener("click", setMathAction)
 })
-
+actionResult.addEventListener("click", getResult)
 
 function setMathAction(event){
   let el = event.target;
   mathAction = el.id;
   console.log(mathAction)
-  actionResult.addEventListener("click", getResult)
 }
 function getResult(){
-  choseAction()
-}EWцц
-function choseAction(){
+  choseAction(mathAction)
+}
+function choseAction(mathAction){
   let firstNum = undefined;
   let secondNum = undefined;
   firstNum = document.getElementById("num1").value
