@@ -2,13 +2,14 @@ import searchImg from '../images/search.png';
 const gameContainerEl = document.getElementById('5');
 gameContainerEl.insertAdjacentHTML(
   'beforeend',
-  `<div class="time__div">
+  `
+  <div class="time__div">
     <form class="time__form">
       <label class="time__label">
-        <input class="time__input" type="number" placeholder="Введіть минути">
+        <input class="time__input" type="number" placeholder="Введіть хвилини">
       </label>
-      <button class="time__btn" type="submit"><img src="${searchImg}" alt="search"></button>
     </form>
+    <button class="time__btn" type="submit"><img src="${searchImg}" alt="search"></button>
     <span class="time__span">..........................</span>
     <p class="time__text">3 дн. 15:45:01</p>
   </div>`
