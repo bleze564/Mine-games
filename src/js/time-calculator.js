@@ -8,8 +8,11 @@ gameContainerEl.insertAdjacentHTML(
       <label class="time__label">
         <input class="time__input" type="number" placeholder="Введіть хвилини">
       </label>
+       <button class="time__btn" type="submit">
+    <img src="${searchImg}" alt="search">
+    </button>
     </form>
-    <button class="time__btn" type="submit"><img src="${searchImg}" alt="search"></button>
+   
     <span class="time__span">..........................</span>
     <p class="time__text">3 дн. 15:45:01</p>
   </div>`
@@ -17,8 +20,11 @@ gameContainerEl.insertAdjacentHTML(
 const form = document.querySelector('.time__form');
 const input = document.querySelector('.time__input');
 const output = document.querySelector('.time__text');
+console.log('time');
 form.addEventListener('submit', function (event) {
+
   event.preventDefault();
+  console.log('hello');
   const value = input.value;
   if (value === '' || value < 0) {
     output.textContent = 'Введіть положитільне чісло';
