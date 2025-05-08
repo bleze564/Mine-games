@@ -52,20 +52,26 @@ function setMathAction(event){
 }
 function getResult(){
   choseAction()
-}
+}EWцц
 function choseAction(){
+  let firstNum = undefined;
+  let secondNum = undefined;
+  firstNum = document.getElementById("num1").value
+  secondNum = document.getElementById("num2").value
   if (mathAction === "plus"){
-    result = firstNum + secondNum
+    result = firstNum*1 + secondNum*1
   }
   else if(mathAction === "minus"){
-    result = firstNum - secondNum
+    result = firstNum*1 - secondNum*1
   }
   else if(mathAction === "extrude"){
-    result = firstNum * secondNum
+    result = firstNum*1 * secondNum*1
   }
   else if(mathAction === "spread"){
-    result = firstNum / secondNum
+    result = firstNum*1 / secondNum*1
   }
+  let resultblock = document.getElementById('result')
+  resultblock.innerHTML = result
 }
 
 
