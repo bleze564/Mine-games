@@ -2,7 +2,7 @@ const gameContainerEl = document.getElementById('8');
 // Створення контейнера
 const container = document.createElement('div');
 container.className = 'input-container';
-document.body.appendChild(container);
+gameContainerEl.appendChild(container);
 
 // Заголовок
 const heading = document.createElement('h2');
