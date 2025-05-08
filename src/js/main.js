@@ -1,5 +1,4 @@
-const gameContainerEl = document.querySelector('.js-game')
-
+const gameContainerEl = document.querySelector('.js-game');
 const games = [
   {
     id: 1,
@@ -52,11 +51,11 @@ const games = [
     category: 'acquaintance',
   },
 ];
-
-const list = games.map((game) => {
-  return `<li id=${game.id}>
+const list = games
+  .map(game => {
+    return `<li id=${game.id}>
         <h2>${game.name}</h2>
         </li>`;
-}).join("");
-
+  })
+  .join('');
 gameContainerEl.insertAdjacentHTML('beforeend', list);

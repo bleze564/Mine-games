@@ -22,7 +22,6 @@ const input = document.querySelector('.time__input');
 const output = document.querySelector('.time__text');
 console.log('time');
 form.addEventListener('submit', function (event) {
-
   event.preventDefault();
   console.log('hello');
   const value = input.value;
