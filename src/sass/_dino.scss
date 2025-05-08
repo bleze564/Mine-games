@@ -1,0 +1,57 @@
+// #game {
+//     position: relative;
+//     width: 720px;
+//     height: 241px;
+//     background-color: #FFF;
+//     border-bottom: 2px solid #444;
+//   }
+  
+//   #dino {
+//     width: 50px;
+//     height: 50px;
+//     background-image: url('https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg=w240-h480-rw'); /* <--- ВСТАВЬ СЮДА путь к своей картинке динозавра */
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     bottom: 0;
+//     left: 50px;
+//   }
+  
+//   .cactus {
+//     width: 20px;
+//     height: 40px;
+//     background-image: url('https://img.itch.zone/aW1nLzcwNzQxNzMucG5n/347x500/xMf9sx.png'); /* <--- ВСТАВЬ СЮДА путь к своей картинке кактуса */
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     animation: moveCactus 2s linear infinite;
+//   }
+  
+//   @keyframes moveCactus {
+//     from {
+//       right: -20px;
+//     }
+//     to {
+//       right: 100%;
+//     }
+//   }
+  
+//   /* Плавный прыжок */
+//   .jump {
+//     animation: jump 0.5s cubic-bezier(0.25, 0.75, 0.5, 1); /* Плавная анимация */
+//   }
+  
+//   @keyframes jump {
+//     0% {
+//       bottom: 0;
+//     }
+//     50% {
+//       bottom: 100px; /* Поднимем выше */
+//     }
+//     100% {
+//       bottom: 0;
+//     }
+//   }
+  
