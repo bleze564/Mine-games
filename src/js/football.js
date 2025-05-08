@@ -3,11 +3,11 @@ import footballImg from '../images/football.png'
 const title = document.createElement('h2');
 title.textContent = 'Футбол';
 title.className = 'football-title';
-document.body.appendChild(title);
+gameContainerEl.appendChild(title);
 
 const field = document.createElement('div');
 field.classList.add('field');
-document.body.appendChild(field);
+gameContainerEl.appendChild(field);
 
 const ball = document.createElement('img');
 ball.classList.add('ball');

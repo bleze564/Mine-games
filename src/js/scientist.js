@@ -31,12 +31,12 @@ const scientists = [
 const title = document.createElement('h2');
 title.textContent = 'Вчений';
 title.className = 'header-title';
-document.body.appendChild(title);
+gameContainerEl.appendChild(title);
 
 // Контейнер
 const box = document.createElement('div');
 box.className = 'container';
-document.body.appendChild(box);
+gameContainerEl.appendChild(box);
 
 // Функція відображення
 function renderCards(data, singleRow = false) {
