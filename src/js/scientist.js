@@ -1,18 +1,30 @@
 const gameContainerEl = document.getElementById('10');
+import AlbertEinstein from '../images/9.jpg'
+import IsaacNewton from '../images/3.jpg'
+import GalileoGalilei from '../images/10.jpg'
+import MarieCurie from '../images/5.jpg'
+import JohannesKepler from '../images/12.jpg'
+import Nicolaus from '../images/2.jpg'
+import Max from '../images/6.jpg'
+import Katherine from '../images/1.jpg'
+import Ada from '../images/7.jpg'
+import Sarah from '../images/8.jpg'
+import Lise from '../images/11.jpg'
+import Hanna from '../images/4.jpg'
 // Дані з фото
 const scientists = [
-  { name: 'Albert Einstein', birth: 1879, death: 1955, img: '/9.jpg' },
-  { name: 'Isaac Newton', birth: 1643, death: 1727, img: '/3.jpg' },
-  { name: 'Galileo Galilei', birth: 1564, death: 1642, img: '/10.jpg' },
-  { name: 'Marie Curie', birth: 1867, death: 1934, img: '/5.jpg' },
-  { name: 'Johannes Kepler', birth: 1571, death: 1630, img: '/12.jpg' },
-  { name: 'Nicolaus Copernicus', birth: 1473, death: 1543, img: '/2.jpg' },
-  { name: 'Max Planck', birth: 1858, death: 1947, img: '/6.jpg' },
-  { name: 'Katherine Blodgett', birth: 1898, death: 1979, img: '/1.jpg' },
-  { name: 'Ada Lovelace', birth: 1815, death: 1852, img: '/7.jpg' },
-  { name: 'Sarah E. Goode', birth: 1855, death: 1905, img: '/8.jpg' },
-  { name: 'Lise Meitner', birth: 1878, death: 1968, img: '/11.jpg' },
-  { name: 'Hanna Hammarström', birth: 1829, death: 1909, img: '/4.jpg' },
+  { name: 'Albert Einstein', birth: 1879, death: 1955, img: AlbertEinstein},
+  { name: 'Isaac Newton', birth: 1643, death: 1727, img: IsaacNewton },
+  { name: 'Galileo Galilei', birth: 1564, death: 1642, img: GalileoGalilei },
+  { name: 'Marie Curie', birth: 1867, death: 1934, img: MarieCurie },
+  { name: 'Johannes Kepler', birth: 1571, death: 1630, img: JohannesKepler },
+  { name: 'Nicolaus Copernicus', birth: 1473, death: 1543, img: Nicolaus },
+  { name: 'Max Planck', birth: 1858, death: 1947, img: Max },
+  { name: 'Katherine Blodgett', birth: 1898, death: 1979, img: Katherine },
+  { name: 'Ada Lovelace', birth: 1815, death: 1852, img: Ada },
+  { name: 'Sarah E. Goode', birth: 1855, death: 1905, img: Sarah },
+  { name: 'Lise Meitner', birth: 1878, death: 1968, img: Lise },
+  { name: 'Hanna Hammarström', birth: 1829, death: 1909, img: Hanna },
 ];
 
 // Заголовок
