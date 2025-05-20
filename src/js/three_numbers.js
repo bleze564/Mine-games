@@ -6,7 +6,6 @@ gameContainerEl.appendChild(container);
 
 // Заголовок
 const heading = document.createElement('h2');
-heading.textContent = 'Введіть 3 числа';
 heading.className = 'header-title';
 container.appendChild(heading);
 
