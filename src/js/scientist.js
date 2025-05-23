@@ -29,7 +29,6 @@ const scientists = [
 
 // Заголовок
 const title = document.createElement('h2');
-title.textContent = 'Вчений';
 title.className = 'header-title';
 gameContainerEl.appendChild(title);
 
