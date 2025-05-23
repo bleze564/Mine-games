@@ -1,9 +1,9 @@
 const gameContainerEl = document.getElementById('7');
 import footballImg from '../images/football.png'
-const title = document.createElement('h2');
-title.textContent = 'Футбол';
-title.className = 'football-title';
-gameContainerEl.appendChild(title);
+// const title = document.createElement('h2');
+// title.textContent = 'Футбол';
+// title.className = 'football-title';
+// gameContainerEl.appendChild(title);
 
 const field = document.createElement('div');
 field.classList.add('field');

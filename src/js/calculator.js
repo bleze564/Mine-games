@@ -1,18 +1,25 @@
 
 
-const gameContainer =document.getElementById("4")
+const gameContainer = document.getElementById("4")
 gameContainer.innerHTML =(`
-    <input id="num1" />
-    <div id="operator_btns">
-      <button id="plus" class="operator">+</button>
-      <button id="minus" class="operator">-</button>
-      <button id="extrude" class="operator">x</button>
-      <button id="spread" class="operator">:</button>
-    </div>
-    <input id="num2">
-    <button id="button-Result">Дорівнює</button>
-    
-    <p id="result"></p>
+  <div id="calculator">
+      <h1 class="cal-title">Калькулятор</h1>
+  <input id="num1" placeholder="Введіть число" />
+
+  <div id="operator_btns">
+    <button id="plus" class="operator">+</button>
+    <button id="minus" class="operator">-</button>
+    <button id="extrude" class="operator">x</button>
+    <button id="spread" class="operator">/</button>
+  </div>
+
+  <input id="num2" placeholder="Введіть число" />
+
+  <button id="button-Result">=</button>
+
+  <p id="result">Результат</p>
+</div>
+
     
   `)
 let firstNum = "";

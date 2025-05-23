@@ -5,16 +5,16 @@ const games = [
     name: 'Перевір в який рік ти народився',
     category: 'numerical',
   },
-  {
-    id: 2,
-    name: 'Вгадай число, яке загадав комп’ютер',
-    category: 'numerical',
-  },
-  {
-    id: 3,
-    name: 'Камінь-Ножиці-Папір',
-    category: 'game',
-  },
+  // {
+  //   id: 2,
+  //   name: 'Вгадай число, яке загадав комп’ютер',
+  //   category: 'numerical',
+  // },
+  // {
+  //   id: 3,
+  //   name: 'Камінь-Ножиці-Папір',
+  //   category: 'game',
+  // },
   {
     id: 4,
     name: 'Калькулятор',
@@ -40,11 +40,11 @@ const games = [
     name: 'Введіть 3 числа',
     category: 'numerical',
   },
-  {
-    id: 9,
-    name: 'Наша команда',
-    category: 'acquaintance',
-  },
+  // {
+  //   id: 9,
+  //   name: 'Наша команда',
+  //   category: 'acquaintance',
+  // },
   {
     id: 10,
     name: 'Обери вченого/их',

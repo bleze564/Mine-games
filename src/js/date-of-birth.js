@@ -5,17 +5,17 @@ const gameContainerEl = document.getElementById('1');
 gameContainerEl.insertAdjacentHTML(
   'beforeend',
   `<div class="date__div">
-    <form class="date__form">
-      <label class="date__label">
-        <input class="date__input" type="number" placeholder="Введіть рік народження" />
-      <button class="date__btn">
-        <img src="${searchImg}" alt="search">
+  <form class="date__form">
+    <label class="date__label">
+      <input class="date__input" type="number" placeholder="Введіть рік народження" />
+      <button class="date__btn" type="submit">
+        <img src="${searchImg}" alt="search" />
       </button>
-      </label>
-    </form>
-    <p class="date__text-true">Ви народилися у високосний рік!</p>
-    <p class="date__text-false">Ви народилися не у високосний рік!</p>
-  </div>`
+    </label>
+  </form>
+  <p class="date__text-true">Ви народилися у високосний рік!</p>
+  <p class="date__text-false show">Ви народилися не у високосний рік!</p>
+</div>`
 );
 
 function currentYear(year) {

@@ -5,10 +5,10 @@ container.className = 'input-container';
 gameContainerEl.appendChild(container);
 
 // Заголовок
-const heading = document.createElement('h2');
-heading.textContent = 'Введіть 3 числа';
-heading.className = 'header-title';
-container.appendChild(heading);
+// const heading = document.createElement('h2');
+// heading.textContent = 'Введіть 3 числа';
+// heading.className = 'header-title';
+// container.appendChild(heading);
 
 // Контейнер інпутів
 const inputsDiv = document.createElement('div');
