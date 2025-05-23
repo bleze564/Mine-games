@@ -59,7 +59,7 @@ renderCards(scientists);
 // Кнопки
 const actions = document.createElement('div');
 actions.className = 'actions';
-document.body.appendChild(actions);
+gameContainerEl.appendChild(actions);
 
 function addButton(text, callback) {
   const btn = document.createElement('button');
